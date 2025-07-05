@@ -39,8 +39,8 @@ class HomeTitle extends StatelessWidget {
                   children: [
                     ...List.generate(
                       3,
-                      (index) =>
-                          const Icon(Icons.star, color: Color(0xFF36534A)),
+                          (index) =>
+                      const Icon(Icons.star, color: Color(0xFF36534A)),
                     ),
                   ],
                 ),

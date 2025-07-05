@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:roopam/home_view.dart';
+
+import 'animated_splash.dart';
 
 // import 'home_view.dart';
 
@@ -14,10 +15,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const HomeView(),
+      theme: ThemeData(primarySwatch: Colors.blue),
+      home: Scaffold(
+        backgroundColor: Color(0xFFEC5001),
+          body: AnimatedSplash()),
     );
   }
 }
