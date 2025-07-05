@@ -97,15 +97,3 @@ flutter:
     - family: Biryani
       fonts:
         - asset: assets/fonts/Biryani-SemiBold.ttf
-
-    - family: Goku
-      fonts:
-        - asset: assets/fonts/goku/Goku.ttf
-        - asset: assets/fonts/goku/Goku Stencil.ttf
-          style: italic
-
-    - family: Raleway
-      fonts:
-        - asset: assets/fonts/raleway/Raleway-Regular.ttf
-        - asset: assets/fonts/raleway/Raleway-Bold.ttf
-          weight: 700
