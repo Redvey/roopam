@@ -56,7 +56,7 @@ class ClockPainter extends CustomPainter {
     var radius= min(centerX, centerY);
 
     var fillBrush=Paint()
-      ..color=CustomColors.menuBackgroundColor;
+      ..color=AppColors.menuBackgroundColor;
 
     var outlineBrush=Paint()
       ..color=const Color(0xFFEAECFF)
@@ -83,7 +83,7 @@ class ClockPainter extends CustomPainter {
       ..strokeWidth=size.width/30;
 
     var sechandBrush=Paint()
-      ..color=CustomColors.secHandColor!
+      ..color=AppColors.secHandColor
       ..style =PaintingStyle.stroke
       ..strokeCap=StrokeCap.round
       ..strokeWidth=size.width/60;
