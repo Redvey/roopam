@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:roopam/skill_marquee.dart';
+import 'package:roopam/features/hero/widgets/skill_marquee.dart';
 
 class BackdropArt extends StatelessWidget {
   const BackdropArt({

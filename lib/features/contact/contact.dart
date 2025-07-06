@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:roopam/project_container.dart';
 
 class ContactPage extends StatelessWidget {
   const ContactPage({super.key, required this.screenSize});
@@ -23,8 +22,8 @@ class ContactPage extends StatelessWidget {
               height: 300,
               width: 300,
               decoration: BoxDecoration(
-                color: Colors.white,
-                border: Border.all(color: Colors.black), // Optional border
+                color: Colors.black,
+                border: Border.all(color: Colors.white), // Optional border
                 borderRadius: const BorderRadius.only(
                   topLeft: Radius.circular(20),
                   topRight: Radius.circular(0), // sharp
@@ -35,7 +34,7 @@ class ContactPage extends StatelessWidget {
               padding: const EdgeInsets.all(16),
               child: const Text("data"),
             ),
-            ProjectBox(),
+
           ],
         ),
       ),

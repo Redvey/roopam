@@ -1,13 +1,15 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
-import 'package:roopam/animated_cursor.dart';
-import 'package:roopam/backdrop.dart';
-import 'package:roopam/contact.dart';
-import 'package:roopam/projects.dart';
-import 'background_marquee.dart';
-import 'bottom_section.dart';
-import 'overlay_text.dart';
+import 'package:roopam/widgets/animated_cursor.dart';
+import 'package:roopam/features/hero/hero_backdrop.dart';
+import 'package:roopam/features/blogs/blogs.dart';
+import 'package:roopam/features/contact/contact.dart';
+import 'package:roopam/core/constants/colors.dart';
+import 'package:roopam/features/projects/projects.dart';
+import '../hero/widgets/background_marquee.dart';
+import '../try_projects/mini_projects_page.dart';
+import '../overlay/overlay_text.dart';
 
 const overlayDescriptionText =
     "I used to roll the dice \n Feel the fear in my enemy's eyes";
@@ -22,7 +24,7 @@ class HomeView extends StatelessWidget {
     return Scaffold(
       // extendBodyBehindAppBar: true,
       // appBar: AppBar(backgroundColor: Colors.transparent),
-      backgroundColor: const Color(0xFFE2DCC8),
+      backgroundColor: AppColors.lightBeige,
       body: Stack(
         children: [
           BackdropArt(),
@@ -82,6 +84,11 @@ class HomeView extends StatelessWidget {
                 ScrollTransformItem(
                   builder: (double scrollOffset) {
                     return  Projects(screenSize: screenSize);
+                  },
+                ),
+                ScrollTransformItem(
+                  builder: (double scrollOffset) {
+                    return  BlogsPage(screenSize: screenSize);
                   },
                 ),
                 ScrollTransformItem(

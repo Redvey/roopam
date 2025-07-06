@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'home_view.dart';
+import 'package:roopam/core/constants/colors.dart';
+import '../features/home/home_view.dart';
 
 class AnimatedSplash extends StatefulWidget {
   const AnimatedSplash({super.key});
@@ -58,7 +59,7 @@ class _AnimatedSplashState extends State<AnimatedSplash>
     final screenHeight = MediaQuery.of(context).size.height;
 
     return Scaffold(
-      backgroundColor: const Color(0xFF36534A), // Orange background
+      backgroundColor: AppColors.greenDark, // Orange background
       body: Stack(
         children: [
           // HomeView sliding in from top
@@ -89,17 +90,8 @@ class _AnimatedSplashState extends State<AnimatedSplash>
               );
             },
             child: Container(
-              color: const  Color(0xFFEC5001),
+              color: AppColors.orange,
               alignment: Alignment.center,
-              child: const Text(
-                "ROOPFOLIO",
-                style: TextStyle(
-                  fontSize: 36,
-                  fontWeight: FontWeight.bold,
-                  letterSpacing: 2,
-                  color: Colors.black87,
-                ),
-              ),
             ),
           ),
         ],

@@ -1,6 +1,6 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
-import 'package:roopam/home_view.dart';
+import 'package:roopam/features/home/home_view.dart';
 
 class OverlayTextSection extends StatelessWidget {
   const OverlayTextSection({super.key});

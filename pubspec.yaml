@@ -19,7 +19,7 @@ dependencies:
   intl: ^0.20.2
   shared_preferences: ^2.5.3
   url_launcher: ^6.3.1
-  flutter_svg: ^2.0.10+1
+  flutter_svg: ^2.2.0
   url_strategy: ^0.2.0
   logger: ^2.1.0
   entry: ^0.0.9
@@ -31,9 +31,10 @@ dependencies:
   flutter_mailer: ^2.1.2
   rive: ^0.13.20
   animated_text_kit: ^4.2.3
-  marquee: ^2.3.0
   device_frame: ^1.4.0
   carousel_slider: ^5.1.1
+  fading_edge_scrollview: ^4.1.1
+  custom_button_builder: ^0.0.4
 
 
 

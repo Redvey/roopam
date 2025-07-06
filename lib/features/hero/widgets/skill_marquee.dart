@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:marquee/marquee.dart';
+import 'package:roopam/widgets/custom_marquee.dart';
 
 class SkillMarquee extends StatelessWidget {
   final String text;
@@ -26,25 +26,25 @@ class SkillMarquee extends StatelessWidget {
     return SizedBox(
       height: height,
       width: double.infinity,
-      child: Marquee(
-        text: text,
-        style: TextStyle(
-          fontFamily: 'HokyaaSans',
-          fontSize: fontSize,
-          foreground: Paint()
-            ..style = PaintingStyle.stroke
-            ..strokeWidth = strokeWidth
-            ..color = strokeColor,
-        ),
+      child: CustomMarquee(
         scrollAxis: Axis.horizontal,
         blankSpace: 50.0,
         velocity: velocity,
         startPadding: 0.0,
-        accelerationDuration: Duration.zero,
-        decelerationDuration: Duration.zero,
-        accelerationCurve: Curves.linear,
-        decelerationCurve: Curves.linear,
+
         pauseAfterRound: Duration.zero,
+        child: Text(
+          text,
+          style: TextStyle(
+            fontFamily: 'HokyaaSans',
+            fontSize: fontSize,
+            foreground: Paint()
+              ..style = PaintingStyle.stroke
+              ..strokeWidth = strokeWidth
+              ..color = strokeColor,
+          ),
+
+        ),
       ),
     );
   }

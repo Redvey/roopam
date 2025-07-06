@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:roopam/core/constants/colors.dart';
 
 class HomeTitle extends StatelessWidget {
   const HomeTitle({
@@ -17,7 +18,7 @@ class HomeTitle extends StatelessWidget {
       height: screenSize.height - screenSize.height * 0.2 * offScreenPercentage,
       width: screenSize.width - screenSize.width * 0.5 * offScreenPercentage,
       decoration: BoxDecoration(
-        color: Color(0xFF283127),
+        color: AppColors.greenDarker,
         // image: DecorationImage(
         //   image: AssetImage('assets/images/bg.png'),
         //   fit: BoxFit.cover, // You can change this to BoxFit.fill, BoxFit.contain, etc.
