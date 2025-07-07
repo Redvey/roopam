@@ -1,8 +1,7 @@
 import 'dart:async';
 import 'dart:math';
 import 'package:flutter/material.dart';
-
-import '../core/constants/colors.dart';
+import '../../../core/constants/colors.dart';
 
 
 class ClockView extends StatefulWidget {

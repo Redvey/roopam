@@ -31,7 +31,7 @@ class PhoneHomeScreen extends StatelessWidget {
                   children: [
                     CustomButton(
                       onPressed: () {
-                        // ✅ Handle screen or link
+                        // Handle screen or link
                         if (apps[index].link != null) {
                           currentState.launchInBrowser(apps[index].link!);
                         } else if (apps[index].screen != null) {

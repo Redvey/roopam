@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:roopam/mini_apps/clock.dart';
 
 import '../core/constants/colors.dart';
+import '../features/try_projects/mini_apps/clock.dart';
 import 'models/app_model.dart';
 
 List<AppModel> apps = [

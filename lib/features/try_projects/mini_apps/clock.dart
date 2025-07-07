@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
-import '../provider/current_state.dart';
+import '../../../provider/current_state.dart';
 
 class ClockApp extends StatelessWidget {
   const ClockApp({super.key});
