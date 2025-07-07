@@ -1,6 +1,8 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:roopam/core/constants/colors.dart';
+import 'package:roopam/core/constants/strings.dart';
 
 class HomeTitle extends StatelessWidget {
   const HomeTitle({
@@ -17,13 +19,7 @@ class HomeTitle extends StatelessWidget {
     return Container(
       height: screenSize.height - screenSize.height * 0.2 * offScreenPercentage,
       width: screenSize.width - screenSize.width * 0.5 * offScreenPercentage,
-      decoration: BoxDecoration(
-        color: AppColors.greenDarker,
-        // image: DecorationImage(
-        //   image: AssetImage('assets/images/bg.png'),
-        //   fit: BoxFit.cover, // You can change this to BoxFit.fill, BoxFit.contain, etc.
-        // ),
-      ),
+      decoration: BoxDecoration(color: AppColors.greenDarker),
       child: Padding(
         padding: const EdgeInsets.all(24.0),
         child: Column(
@@ -33,25 +29,29 @@ class HomeTitle extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  "Welcome To ROOPFOLIO".toUpperCase(),
-                  style: GoogleFonts.bebasNeue(color: Color(0xFF36534A)),
+                  AppStrings.welcomeMessage.toUpperCase(),
+                  style: TextStyle(
+                    color: AppColors.greenDark,
+                    fontFamily: 'BebasNeue',
+                  ),
                 ),
                 Row(
                   children: [
                     ...List.generate(
                       3,
-                          (index) =>
-                      const Icon(Icons.star, color: Color(0xFF36534A)),
+                      (index) =>
+                          const Icon(Icons.star, color: AppColors.greenDark),
                     ),
                   ],
                 ),
               ],
             ),
             Text(
-              "Code+Dev".toUpperCase(),
-              style: GoogleFonts.bebasNeue(
+              AppStrings.codeDev.toUpperCase(),
+              style: TextStyle(
+                fontFamily: 'BebasNeue',
                 color: Color(0xFF2C352B),
-                fontSize: 240,
+                fontSize: lerpDouble(240, 80, offScreenPercentage),
               ),
             ),
             Row(
@@ -61,19 +61,24 @@ class HomeTitle extends StatelessWidget {
                   children: [
                     ...List.generate(
                       3,
-                          (index) =>
-                      const Icon(Icons.star, color: Color(0xFF36534A)),
+                      (index) => Icon(Icons.star, color: AppColors.greenDark),
                     ),
                   ],
                 ),
 
                 Text(
-                  "11:11".toUpperCase(),
-                  style: GoogleFonts.bebasNeue(color: Color(0xEC36534A)),
+                  AppStrings.eleven.toUpperCase(),
+                  style: TextStyle(
+                    fontFamily: 'BebasNeue',
+                    color: AppColors.greenDarkAccent,
+                  ),
                 ),
                 Text(
-                  "=====+=-+=====".toUpperCase(),
-                  style: GoogleFonts.bebasNeue(color: Color(0xEC36534A)),
+                  AppStrings.equalPlus.toUpperCase(),
+                  style: TextStyle(
+                    fontFamily: 'BebasNeue',
+                    color: AppColors.greenDarkAccent,
+                  ),
                 ),
               ],
             ),

@@ -5,6 +5,7 @@ class AppColors {
 
   // Greens
   static const greenDark = Color(0xFF36534A);
+  static const greenDarkAccent = Color(0xEC36534A);
   static const greenDarker = Color(0xFF283127);
   static const greenSoft = Color(0xFF2C352B);
   static const greenLight = Color(0xFF3BFC67);

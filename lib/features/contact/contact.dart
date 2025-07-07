@@ -18,22 +18,7 @@ class ContactPage extends StatelessWidget {
         padding: const EdgeInsets.all(16.0),
         child: Row(
           children: [
-            Container(
-              height: 300,
-              width: 300,
-              decoration: BoxDecoration(
-                color: Colors.black,
-                border: Border.all(color: Colors.white), // Optional border
-                borderRadius: const BorderRadius.only(
-                  topLeft: Radius.circular(20),
-                  topRight: Radius.circular(0), // sharp
-                  bottomRight: Radius.circular(20),
-                  bottomLeft: Radius.circular(0), // sharp
-                ),
-              ),
-              padding: const EdgeInsets.all(16),
-              child: const Text("data"),
-            ),
+
 
           ],
         ),
