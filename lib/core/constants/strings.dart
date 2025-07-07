@@ -14,6 +14,8 @@ class AppStrings {
   static const firstName = 'Roopam';
   static const lastName = 'Barman';
   static const codeDev = 'Code + Dev';
+  static const eleven = '11:11';
+  static const equalPlus = "=====+=-+=====";
 
   // Bottom Section
   static const exploreMessage = 'I GO EXPLORE\nAND MAKE THINGS\nTHAT I FIND INTERESTING';

@@ -52,12 +52,9 @@ flutter:
     - assets/rive/
 
   fonts:
-    - family: Fascinate
+    - family: BebasNeue
       fonts:
-        - asset: assets/fonts/Fascinate-Regular.ttf
-    - family: Eastbroadway
-      fonts:
-        - asset: assets/fonts/eastbroadway-semicondensedregular.otf
+        - asset: assets/fonts/BebasNeue-Regular.ttf
     - family: HokyaaSans
       fonts:
         - asset: assets/fonts/hokya-sans/Hokyaa Sans Reg.ttf
