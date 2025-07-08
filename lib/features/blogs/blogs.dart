@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:roopam/core/constants/colors.dart';
+import 'package:roopam/core/constants/strings.dart';
+import 'package:roopam/features/blogs/widgets/blog_container.dart';
 import 'package:roopam/features/blogs/widgets/skills_container.dart';
 
 import '../../widgets/custom_marquee.dart';
-
 
 class BlogsPage extends StatelessWidget {
   const BlogsPage({super.key, required this.screenSize});
@@ -38,18 +39,33 @@ class BlogsPage extends StatelessWidget {
                 scrollAxis: Axis.horizontal,
                 velocity: 30,
                 blankSpace: 40,
-                child: SkillsBox(assetName: 'assets/images/github-mark.svg', toolName: 'Github',),
+                child: SkillsBox(
+                  assetName: 'assets/images/github-mark.svg',
+                  toolName: 'Github',
+                ),
               ),
             ),
-            Text(
-              "Blogs",
-              style: TextStyle(
-                fontFamily: 'ScotchDisplay',
-                fontSize: 64,
-                color: AppColors.lightYellow,
-              ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Column(
+                  children: [
+                    Text(
+                      AppStrings.hereAreBlogs,
+                      style: TextStyle(
+                        fontFamily: 'ScotchDisplay',
+                        fontSize: 24,
+                        color: AppColors.lightYellow,
+                      ),
+                    ),
+                    Divider(),
+                    BlogContainer(),
+                  ],
+                ),
+
+                // FlickerText(text: AppStrings.knowMoreAboutMe),
+              ],
             ),
-            Divider(),
           ],
         ),
       ),
@@ -57,3 +73,5 @@ class BlogsPage extends StatelessWidget {
     );
   }
 }
+
+
