@@ -24,4 +24,10 @@ class AppStrings {
   static const contactTitle = 'Let\'s Get in Touch';
   static const emailHint = 'Your email address';
   static const messageHint = 'Write your message here...';
+
+  //blogs
+  static const hereAreBlogs = "Here are some blogs I've written";
+  static const knowMoreAboutMe = "Wanna Know More About Me?";
+
+
 }

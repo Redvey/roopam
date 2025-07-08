@@ -1,6 +1,9 @@
-import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
+import 'package:roopam/core/constants/strings.dart';
 import 'package:roopam/features/home/home_view.dart';
+import 'package:roopam/features/overlay/widgets/title_text.dart';
+
+import '../../widgets/flicker_text.dart';
 
 class OverlayTextSection extends StatelessWidget {
   const OverlayTextSection({super.key});
@@ -15,10 +18,10 @@ class OverlayTextSection extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
 
         children: [
-          SizedBox(height: 100,),
+          SizedBox(height: 100),
           Column(
             children: [
-              const _TitleText(
+              const TitleText(
                 text: 'I AM',
                 style: TextStyle(
                   fontFamily: 'ScotchDisplay',
@@ -31,7 +34,7 @@ class OverlayTextSection extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  const _TitleText(
+                  const TitleText(
                     text: 'Roopam',
                     style: TextStyle(
                       fontFamily: 'ScotchDisplay',
@@ -41,7 +44,7 @@ class OverlayTextSection extends StatelessWidget {
                       color: Colors.white,
                     ),
                   ),
-                  const _TitleText(
+                  const TitleText(
                     text: 'Barman',
 
                     style: TextStyle(
@@ -73,60 +76,9 @@ class OverlayTextSection extends StatelessWidget {
             ),
           ),
 
-          SizedBox(
-            height: 40,
-            child: DefaultTextStyle(
-              style: const TextStyle(
-                fontSize: 35,
-                color: Colors.white,
-                shadows: [
-                  Shadow(
-                    blurRadius: 7.0,
-                    color: Colors.white,
-                    offset: Offset(0, 0),
-                  ),
-                ],
-              ),
-              child: AnimatedTextKit(
-                repeatForever: true,
-                animatedTexts: [
-                  FlickerAnimatedText(
-                    'Scroll to See magic',
-                    textStyle: TextStyle(
-                      fontFamily: 'HokyaaSans',
-                      fontSize: 20,
-                      fontWeight: FontWeight.w400,
-                      color: Color(0xFFF8E6CA),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
+          SizedBox(height: 40, child: FlickerText(text: AppStrings.scrollHint)),
         ],
       ),
-    );
-  }
-}
-
-class _TitleText extends StatelessWidget {
-  final String text;
-  final TextStyle? style;
-
-  const _TitleText({required this.text, this.style});
-
-  @override
-  Widget build(BuildContext context) {
-    return Text(
-      text,
-      style:
-          style ??
-          const TextStyle(
-            fontFamily: 'ScotchDisplay',
-            fontSize: 200,
-            fontWeight: FontWeight.w900,
-            color: Color(0xFFEC5001),
-          ),
     );
   }
 }

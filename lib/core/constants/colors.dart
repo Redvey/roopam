@@ -3,6 +3,10 @@ import 'package:flutter/material.dart';
 class AppColors {
   AppColors._();
 
+  //Primary Black and Whites
+  static const primaryWhite = Color(0xFFFFFFFF);
+  static const primaryBlack = Color(0xFF000000);
+
   // Greens
   static const greenDark = Color(0xFF36534A);
   static const greenDarkAccent = Color(0xEC36534A);
@@ -22,6 +26,7 @@ class AppColors {
   static const yellow = Color(0xFFFDF17D);
   static const orange = Color(0xFFEC5001);
   static const lightYellow = Color(0xFFE2DCC8);
+  static const flickerYellow=Color(0xFFF8E6CA);
 
   // Background & Neutrals
   static const lightBeige = Color(0xFFE2DCC8);
