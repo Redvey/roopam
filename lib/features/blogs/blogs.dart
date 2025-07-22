@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 import 'package:roopam/core/constants/colors.dart';
 import 'package:roopam/core/constants/strings.dart';
 import 'package:roopam/features/blogs/widgets/blog_container.dart';
@@ -46,7 +47,7 @@ class BlogsPage extends StatelessWidget {
               ),
             ),
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              // mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Column(
                   children: [
@@ -60,7 +61,22 @@ class BlogsPage extends StatelessWidget {
                     ),
                     Divider(),
                     BlogContainer(),
+                    BlogContainer(),
+                    BlogContainer(),
+                    BlogContainer(),
                   ],
+                ),
+                SizedBox(
+                  height: 400,
+                    width: 400,
+                    child: LottieBuilder.asset('assets/animations/book.json')),
+                Text(
+                  "More about me x",
+                  style: TextStyle(
+                    fontSize: 24,
+                    fontFamily: 'HokyaaSans',
+                    color: Color(0xF7FFF87F),
+                  ),
                 ),
 
                 // FlickerText(text: AppStrings.knowMoreAboutMe),

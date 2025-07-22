@@ -11,9 +11,8 @@ import '../hero/widgets/background_marquee.dart';
 import '../try_projects/mini_projects_page.dart';
 import '../overlay/overlay_text.dart';
 
-const overlayDescriptionText =
-    "I used to roll the dice \n Feel the fear in my enemy's eyes";
-// const backgroundImageUrl = 'assets/images/bg.jpg';
+
+
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -22,8 +21,7 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
     return Scaffold(
-      // extendBodyBehindAppBar: true,
-      // appBar: AppBar(backgroundColor: Colors.transparent),
+
       backgroundColor: AppColors.lightBeige,
       body: Stack(
         children: [

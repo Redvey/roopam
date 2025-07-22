@@ -16,6 +16,8 @@ class AppStrings {
   static const codeDev = 'Code + Dev';
   static const eleven = '11:11';
   static const equalPlus = "=====+=-+=====";
+  static const overlayDescriptionText =
+      "I used to roll the dice \n Feel the fear in my enemy's eyes";
 
   // Bottom Section
   static const exploreMessage = 'I GO EXPLORE\nAND MAKE THINGS\nTHAT I FIND INTERESTING';
